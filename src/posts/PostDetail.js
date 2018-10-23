@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
 
 class PostDetail extends Component {
+
+  constructor(props){
+    super(props);
+    this.titleWasClicked = this.titleWasClicked.bind(this);
+  }
+
   titleWasClicked(event){
     alert("Hello There");
   }
+
   render () {
     const {post} = this.props
     return (
