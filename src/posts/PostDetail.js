@@ -8,6 +8,8 @@ class PostDetail extends Component {
   }
 
   titleWasClicked(event){
+    const {dataCallback} = this.props;
+    dataCallback("Hello There");
     alert("Hello There");
   }
 
